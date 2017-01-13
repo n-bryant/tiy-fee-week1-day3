@@ -1,0 +1,158 @@
+/* Reset */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+ul {
+  padding-left: 3.33%;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Header */
+header {
+  background: #f3f3f3;
+  overflow: hidden;
+  padding: 15px 20px;
+}
+
+header h1 {
+  float: left;
+  line-height: 2;
+  font-weight: lighter;
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  float: right;
+  margin-right: 9px;
+}
+
+nav li {
+  float: left;
+  margin-left: 10px;
+}
+
+nav li a {
+  color: #000;
+  font: bold 13px helvetica, arial, sans-serif;
+  line-height: 5;
+}
+
+
+/* Octocats */
+.octodex {
+  margin: 25px auto;
+  overflow: hidden;
+  width: 1600px;
+}
+
+li.octocat {
+  float: left;
+  margin: 30px 10px;
+  overflow: hidden;
+}
+
+a.octocat {
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+a.octocat img {
+  padding: 10px;
+  width: 468px;
+}
+
+
+/* cat footers */
+footer:before {
+  content: "";
+  border: 8px solid transparent;
+  border-top-color: #cacaca;
+  float: right;
+  position: relative;
+  right: 10px;
+  width: 5px;
+}
+
+footer {
+  bottom: 17px;
+  margin-bottom: -30px;
+  overflow: hidden;
+  padding: 12px 0;
+  position: relative;
+}
+
+.octonumber:before {
+  content: "#";
+}
+
+.octonumber {
+  color: #cacaca;
+  float: left;
+}
+
+.authors {
+  float: right;
+  padding-left: 5px;
+}
+
+.authors img {
+  bottom: 8px;
+  position: relative;
+  width: 28px;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+
+.authors img:hover {
+  transform: scale(1.25);
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+footer cite {
+  float: right;
+}
+
+cite {
+  color: #cacaca;
+  font-style: normal;
+  left: 12px;
+  position: relative;
+  top: 22px;
+}
+
+cite a {
+  color: #333;
+  font-weight: bold;
+}
+
+li.octocat:after {
+  border-bottom: 1px solid #cacaca;
+  content: "";
+  display: block;
+}
